@@ -11,22 +11,19 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto ">
           <li class="nav-item">
-            <a class="nav-link {{ ($title === "Home") ? 'active' : '' }}" href="#">Home</a>
+            <a class="nav-link {{ ($title === "Home") ? 'active' : '' }}" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {{ ($title === "About") ? 'active' : '' }}" href="#about">About</a>
+            <a class="nav-link {{ ($title === "About") ? 'active' : '' }}" href="/#about">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link {{ ($title === "Form") ? 'active' : '' }}" href="/form">Servis</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {{ ($title === "Paket Servis") ? 'active' : '' }}" href="#paket-servis">Paket Servis</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link {{ ($title === "Kontak") ? 'active' : '' }}" href="/kontak">Kontak</a>
           </li>
           <li class="nav-item">
-            <a class="btn btn-outline-light text-white rounded-5" href="/login">Login</a>
+            <a class="nav-link text-white rounded-5" href="/login">Admin</a>
           </li>
         </ul>
       </div>
