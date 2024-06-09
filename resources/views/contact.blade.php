@@ -14,24 +14,25 @@
 
               <div class="row justify-content-center">
                 <div class="col-md-6" >
-                  <form class="text-white">
-
+                  <form action="/pesan/savepesan" method="POST" class="text-white">
+                    @csrf
                     <div class="mb-3">
                       <label for="name" class="form-label">Nama Lengkap</label>
-                      <input type="name" class="form-control" id="name" aria-describedby="name" style="background-color: #D9D9D9;">
+                      <input type="name" class="form-control" id="name" name="nama_pengirim" aria-describedby="name" style="background-color: #D9D9D9;">
                     </div>
 
                     <div class="mb-3">
                       <label for="email" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="email" aria-describedby="email" style="background-color: #D9D9D9;">
+                      <input type="email" class="form-control" id="email" name="email_pengirim" aria-describedby="email" style="background-color: #D9D9D9;">
                     </div>
                     
                     <div class="mb-3">
                       <label for="pesan" class="form-label">Pesan</label>
-                      <textarea class="form-control" style="background-color: #D9D9D9;" id="pesan" rows="3"></textarea>
+                      <textarea class="form-control" name="pesan" style="background-color: #D9D9D9;" id="pesan" rows="3"></textarea>
                     </div>
-
-                    <button type="submit" class="btn text-white" style="background-color: #1E549F">Kirim</button>
+                    <button type="submit" name="submit" class="btn text-white" style="background-color: #1E549F;">Kirim</button>
+                    <!--<input type="submit" name="submit" value="Kirim">-->
+                    <!--<button type="submit" class="btn text-white" style="background-color: #1E549F">Kirim</button>-->
                     <button type="reset" class="btn text-white" style="background-color: #1E549F;">Reset</button>
                   </form>
                     </div>

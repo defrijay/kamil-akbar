@@ -14,7 +14,7 @@
           <span style="color: hsl(218, 81%, 75%)">Kamil Akbar</span>
         </h1>
         <p class="mb-4 opacity-70 fw-light" style="color: hsl(218, 81%, 85%)">
-          Sebelum Pesan Login dulu yu!
+        Login Khusus Admin Yaa!
         </p>
       </div>
 
@@ -25,30 +25,21 @@
         <!-- Form Pendaftaran -->
         <div class="card bg-glass">
           <div class="card-body px-4 py-5 px-md-5">
-            <form action="" method="">
+            <form action="/admin/login" method="POST">
+            @csrf
               <!-- Email input -->
               <div class="form-outline mb-4">
                 <label class="form-label" for="form3Example3">Alamat Email</label>
-                <input type="email" id="form3Example3" class="form-control" />
+                <input type="email" id="form3Example3" class="form-control" name="email" placeholder="Masukkan E-mail" />
               </div>
 
               <!-- Password input -->
               <div class="form-outline mb-4">
                   <label class="form-label" for="password">Password</label>
-                  <input type="password" id="password" class="form-control"/>
-              </div>
-
-              <div class="form-outline mb 4 fw-lighter">
-                <p>Belum Punya Akun? <a href="">Daftar Sini!</a></p>
+                  <input type="password" id="password" class="form-control" name="password" placeholder="Masukkan Password"/>
               </div>
               <!-- Submit Button -->
-              <button type="submit" class="btn btn-primary btn-block mb-4">
-                Login
-              </button>
-              <!-- Daftar Button -->
-              <a href="" class="btn btn-primary btn-block mb-4">
-                Daftar
-              </a>
+              <button type="submit" name="submit" class="btn text-white" style="background-color: #1E549F;">Login</button>
             </form>
           </div>
         </div>
